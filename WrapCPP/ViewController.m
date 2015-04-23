@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "CppWrapper.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    CppWrapper *wrap = [[CppWrapper alloc] init];
+    double n = 5;
+    n = [wrap cppTimesTwo:n];
+    NSLog(@"%f", n);
 }
 
 - (void)didReceiveMemoryWarning {
