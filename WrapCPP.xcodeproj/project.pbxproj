@@ -14,6 +14,8 @@
 		3E37D6861AE757E10066B5D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E37D6851AE757E10066B5D3 /* Images.xcassets */; };
 		3E37D6891AE757E10066B5D3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E37D6871AE757E10066B5D3 /* LaunchScreen.xib */; };
 		3E37D6951AE757E10066B5D3 /* WrapCPPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E37D6941AE757E10066B5D3 /* WrapCPPTests.m */; };
+		3E37D6B01AE885380066B5D3 /* Cpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3E37D6AC1AE885380066B5D3 /* Cpp.cpp */; };
+		3E37D6B11AE885380066B5D3 /* CppWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E37D6AF1AE885380066B5D3 /* CppWrapper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		3E37D68E1AE757E10066B5D3 /* WrapCPPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WrapCPPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E37D6931AE757E10066B5D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E37D6941AE757E10066B5D3 /* WrapCPPTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WrapCPPTests.m; sourceTree = "<group>"; };
+		3E37D6AC1AE885380066B5D3 /* Cpp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Cpp.cpp; sourceTree = "<group>"; };
+		3E37D6AD1AE885380066B5D3 /* Cpp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cpp.h; sourceTree = "<group>"; };
+		3E37D6AE1AE885380066B5D3 /* CppWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CppWrapper.h; sourceTree = "<group>"; };
+		3E37D6AF1AE885380066B5D3 /* CppWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CppWrapper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,10 @@
 		3E37D6771AE757E10066B5D3 /* WrapCPP */ = {
 			isa = PBXGroup;
 			children = (
+				3E37D6AC1AE885380066B5D3 /* Cpp.cpp */,
+				3E37D6AD1AE885380066B5D3 /* Cpp.h */,
+				3E37D6AE1AE885380066B5D3 /* CppWrapper.h */,
+				3E37D6AF1AE885380066B5D3 /* CppWrapper.m */,
 				3E37D67C1AE757E10066B5D3 /* AppDelegate.h */,
 				3E37D67D1AE757E10066B5D3 /* AppDelegate.m */,
 				3E37D67F1AE757E10066B5D3 /* ViewController.h */,
@@ -221,7 +231,9 @@
 			files = (
 				3E37D6811AE757E10066B5D3 /* ViewController.m in Sources */,
 				3E37D67E1AE757E10066B5D3 /* AppDelegate.m in Sources */,
+				3E37D6B11AE885380066B5D3 /* CppWrapper.m in Sources */,
 				3E37D67B1AE757E10066B5D3 /* main.m in Sources */,
+				3E37D6B01AE885380066B5D3 /* Cpp.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +430,7 @@
 				3E37D69A1AE757E10066B5D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3E37D69B1AE757E10066B5D3 /* Build configuration list for PBXNativeTarget "WrapCPPTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +439,7 @@
 				3E37D69D1AE757E10066B5D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
